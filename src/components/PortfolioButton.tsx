@@ -1,47 +1,63 @@
-import React from 'react';
+import { ButtonVariant } from '@/types/portfolio';
 
-interface PortfolioButtonProps {
-  variant: 'red' | 'blue' | 'green' | 'gray';
-  icon: string;
+interface PortfolioButtonProps extends Omit<ButtonVariant, 'text'> {
   children: React.ReactNode;
-  href?: string;
-  onClick?: () => void;
+  className?: string;
 }
 
-const PortfolioButton: React.FC<PortfolioButtonProps> = ({
-  variant,
-  icon,
-  children,
-  href = "#",
-  onClick
-}) => {
-  const getVariantClass = () => {
-    switch (variant) {
-      case 'red':
-        return 'btn-portfolio-red';
-      case 'blue':
-        return 'btn-portfolio-blue';
-      case 'green':
-        return 'btn-portfolio-green';
-      case 'gray':
-        return 'btn-portfolio-gray';
-      default:
-        return 'btn-portfolio-red';
+const VARIANT_CLASSES = {
+  red: 'btn-portfolio-red',
+  blue: 'btn-portfolio-blue', 
+  green: 'btn-portfolio-green',
+  gray: 'btn-portfolio-gray',
+} as const;
+
+const PortfolioButton = ({ 
+  variant, 
+  icon, 
+  children, 
+  href = "#", 
+  action,
+  className = ""
+}: PortfolioButtonProps) => {
+  const variantClass = VARIANT_CLASSES[variant];
+  const combinedClassName = `${variantClass} ${className}`.trim();
+  
+  const handleClick = () => {
+    if (action) {
+      action();
     }
   };
 
-  const Component = href !== "#" ? 'a' : 'button';
+  const buttonContent = (
+    <>
+      <span className="material-icons" aria-hidden="true">
+        {icon}
+      </span>
+      {children}
+    </>
+  );
+
+  if (href && href !== "#") {
+    return (
+      <a 
+        href={href}
+        className={combinedClassName}
+        onClick={action ? handleClick : undefined}
+      >
+        {buttonContent}
+      </a>
+    );
+  }
 
   return (
-    <Component
-      className={getVariantClass()}
-      href={href !== "#" ? href : undefined}
-      onClick={onClick}
-      role={href === "#" ? "button" : undefined}
+    <button 
+      className={combinedClassName}
+      onClick={handleClick}
+      type="button"
     >
-      <span className="material-icons">{icon}</span>
-      {children}
-    </Component>
+      {buttonContent}
+    </button>
   );
 };
 

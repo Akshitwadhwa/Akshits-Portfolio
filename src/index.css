@@ -5,10 +5,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Portfolio Design System */
+/* ============================================
+   PORTFOLIO DESIGN SYSTEM
+   ============================================ */
+
 @layer base {
   :root {
-    /* Dark Portfolio Theme */
+    /* Color Palette */
     --background: 221 39% 11%;
     --foreground: 220 9% 90%;
     
@@ -18,19 +21,12 @@
     --portfolio-gray: 220 9% 46%;
     --portfolio-white: 0 0% 100%;
     
-    /* Text Colors */
+    /* Semantic Colors */
     --text-primary: 0 84% 60%;
     --text-secondary: 220 13% 69%;
     --text-muted: 220 9% 46%;
-    
-    /* Animation Variables */
-    --animation-duration: 1s;
-    --hover-scale: 1.05;
-    --particle-count: 50;
   }
-}
 
-@layer base {
   * {
     @apply border-border;
   }
@@ -41,14 +37,21 @@
   }
 }
 
+/* ============================================
+   COMPONENT STYLES
+   ============================================ */
+
 @layer components {
-  /* Portfolio Button Variants */
+  /* Button System */
   .btn-portfolio {
-    @apply bg-transparent border-2 font-semibold py-3 px-6 rounded-lg transition-all duration-300 ease-in-out transform hover:scale-105 flex items-center justify-center gap-2;
+    @apply bg-transparent border-2 font-semibold py-3 px-6 rounded-lg 
+           transition-all duration-300 ease-in-out transform hover:scale-105 
+           flex items-center justify-center gap-2;
   }
   
   .btn-portfolio-red {
-    @apply btn-portfolio border-portfolio-red text-portfolio-red hover:bg-portfolio-red hover:text-white;
+    @apply btn-portfolio border-portfolio-red text-portfolio-red 
+           hover:bg-portfolio-red hover:text-white;
     box-shadow: 0 0 0 0 hsl(var(--portfolio-red) / 0.4);
   }
   
@@ -57,18 +60,21 @@
   }
   
   .btn-portfolio-blue {
-    @apply btn-portfolio border-portfolio-blue text-portfolio-blue hover:bg-portfolio-blue hover:text-white;
+    @apply btn-portfolio border-portfolio-blue text-portfolio-blue 
+           hover:bg-portfolio-blue hover:text-white;
   }
   
   .btn-portfolio-green {
-    @apply btn-portfolio border-portfolio-green text-portfolio-green hover:bg-portfolio-green hover:text-white;
+    @apply btn-portfolio border-portfolio-green text-portfolio-green 
+           hover:bg-portfolio-green hover:text-white;
   }
   
   .btn-portfolio-gray {
-    @apply btn-portfolio border-portfolio-gray text-portfolio-gray hover:bg-portfolio-gray hover:text-white;
+    @apply btn-portfolio border-portfolio-gray text-portfolio-gray 
+           hover:bg-portfolio-gray hover:text-white;
   }
-  
-  /* Profile Image Container */
+
+  /* Profile Section */
   .profile-container {
     @apply relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center;
   }
@@ -84,13 +90,7 @@
   .profile-image {
     @apply w-48 h-48 md:w-64 md:h-64 object-contain rounded-full;
   }
-  
-  /* Particle Animation */
-  .particle {
-    @apply absolute bg-white rounded-full;
-    animation: float 20s infinite linear;
-  }
-  
+
   /* Typography */
   .hero-title {
     @apply text-5xl md:text-7xl font-bold text-portfolio-red tracking-wider mb-4;
@@ -99,14 +99,10 @@
   .hero-description {
     @apply text-lg text-secondary mb-8;
   }
-}
 
-@layer base {
-  * {
-    @apply border-border;
-  }
-
-  body {
-    @apply bg-background text-foreground;
+  /* Particles */
+  .particle {
+    @apply absolute bg-white rounded-full;
+    animation: float 20s infinite linear;
   }
 }
