@@ -7,7 +7,7 @@ const Index = () => {
   const { name, description, buttons, particleCount } = PORTFOLIO_CONFIG;
 
   return (
-    <main className="min-h-screen flex items-center justify-center p-4 relative">
+    <div className="min-h-screen flex items-center justify-center p-4 relative">
       <ParticleBackground count={particleCount} />
       
       <div className="container mx-auto flex flex-col md:flex-row items-center justify-center gap-16 relative z-10">
@@ -18,7 +18,7 @@ const Index = () => {
           buttons={buttons}
         />
       </div>
-    </main>
+    </div>
   );
 };
 
