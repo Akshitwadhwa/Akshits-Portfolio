@@ -1,7 +1,7 @@
 import { PortfolioConfig } from '@/types/portfolio';
 
 export const PORTFOLIO_CONFIG: PortfolioConfig = {
-  name: "Akhit Wadhwa",
+  name: "Akshit Wadhwa",
   description: "Bringing stories to life through compelling visuals, gimbal operations, and cinematic storytelling. Specializing in music videos, commercials, and professional photography. I am a developer with a passion for Machine Learning and AI.",
   particleCount: 50,
   buttons: [
@@ -15,11 +15,7 @@ export const PORTFOLIO_CONFIG: PortfolioConfig = {
       icon: 'download',
       text: 'Download Resume'
     },
-    {
-      variant: 'blue',
-      icon: 'description', 
-      text: 'Service Agreement'
-    },
+    
     {
       variant: 'gray',
       icon: 'email',
