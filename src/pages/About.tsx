@@ -52,6 +52,10 @@ const About = () => {
               <SquareFunction className="h-6 w-6 text-portfolio-green" />
               <span className="text-foreground font-medium">Machine Learning</span>
             </div>
+             <div className="flex items-center gap-4 p-4 rounded-lg border border-border bg-card hover:bg-accent/50 transition-colors">
+              <SquareFunction className="h-6 w-6 text-portfolio-green" />
+              <span className="text-foreground font-medium">Full Stack Development</span>
+            </div>
             <div className="flex items-center gap-4 p-4 rounded-lg border border-border bg-card hover:bg-accent/50 transition-colors">
               <Brain className="h-6 w-6 text-portfolio-red" />
               <span className="text-foreground font-medium">Artificial Intelligence</span>

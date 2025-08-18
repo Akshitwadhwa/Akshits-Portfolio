@@ -76,7 +76,8 @@
 
   /* Profile Section */
   .profile-container {
-    @apply relative w-64 h-64 md:w-80 md:h-80 flex items-center justify-center;
+    @apply relative w-72 h-72 md:w-96 md:h-96 flex items-center justify-center;
+    aspect-ratio: 1;
   }
   
   .profile-border-outer {
@@ -84,12 +85,31 @@
   }
   
   .profile-border-inner {
-    @apply absolute inset-2 border-4 border-portfolio-blue rounded-full animate-ping;
+    @apply absolute border-2 border-portfolio-blue rounded-full animate-ping;
+    top: 16px;
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
   }
   
   .profile-image {
-    @apply w-48 h-48 md:w-64 md:h-64 object-contain rounded-full;
+    @apply w-56 h-56 md:w-72 md:h-72 object-cover rounded-full transition-transform duration-300 ease-in-out;
   }
+  
+  .profile-image:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Alternative zoom options - uncomment to use */
+  .profile-image-zoom-in {
+    @apply w-56 h-56 md:w-72 md:h-72 object-cover rounded-full;
+    transform: scale(1.0);
+  }
+  
+  .profile-image-zoom-out {
+    @apply w-56 h-56 md:w-72 md:h-72 object-cover rounded-full;
+    transform: scale(0.8);
+  } 
 
   /* Typography */
   .hero-title {
