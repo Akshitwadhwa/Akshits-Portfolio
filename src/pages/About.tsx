@@ -9,22 +9,22 @@ const About = () => {
     <div className="min-h-screen bg-background text-foreground p-8">
       <div className="max-w-4xl mx-auto">
         {/* Profile Header */}
-        <div className="flex items-start gap-6 mb-12">
+        <div className="flex items-start gap-8 mb-12">
           <div className="relative">
             <img 
               src={profileImage}
               alt={`${name} profile`}
-              className="w-24 h-24 rounded-full object-cover border-2 border-portfolio-gray/30"
+              className="w-40 h-40 rounded-full object-cover border-2 border-portfolio-gray/30"
             />
           </div>
           
           <div className="flex-1">
-            <h1 className="text-3xl font-bold text-foreground mb-2">{name}</h1>
-            <p className="text-muted-foreground text-lg leading-relaxed mb-2">
+            <h1 className="text-5xl font-bold text-foreground mb-4">{name}</h1>
+            <p className="text-muted-foreground text-xl leading-relaxed mb-4">
               Software Developer specializing in React, Machine Learning, and Artificial Intelligence. Passionate
               about creating innovative solutions and exploring new technologies.
             </p>
-            <p className="text-muted-foreground">Based in San Francisco, CA</p>
+            <p className="text-muted-foreground text-lg">Based in Gurgaon</p>
           </div>
         </div>
 
