@@ -1,4 +1,4 @@
-import profileImage from "@/assets/akhit-profile.jpg";
+import profileImage from "@/assets/akshit-profile.jpg";
 import { Atom, Brain, SquareFunction } from "lucide-react";
 import { PORTFOLIO_CONFIG } from "@/constants/portfolio";
 
