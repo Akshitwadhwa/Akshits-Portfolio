@@ -24,7 +24,7 @@ const About = () => {
               Software Developer specializing in React, Machine Learning, and Artificial Intelligence. Passionate
               about creating innovative solutions and exploring new technologies.
             </p>
-            <p className="text-muted-foreground">Based in San Francisco, CA</p>
+            <p className="text-muted-foreground">Based in Gurgaon</p>
           </div>
         </div>
 
