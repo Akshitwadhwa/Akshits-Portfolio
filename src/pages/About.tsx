@@ -14,7 +14,8 @@ const About = () => {
             <img 
               src={profileImage}
               alt={`${name} profile`}
-              className="w-40 h-40 rounded-full object-cover border-2 border-portfolio-gray/30"
+              className="w-40 h-40 rounded-full object-cover border-4 border-portfolio-blue/20 shadow-lg aspect-square"
+              style={{ objectPosition: 'center center' }}
             />
           </div>
           
