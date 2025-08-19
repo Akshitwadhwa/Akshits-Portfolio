@@ -19,7 +19,7 @@ const navigationItems = [
   { title: "Work", url: "/work", icon: Briefcase },
   { title: "Resume", url: "/resume", icon: FileText },
   { title: "Contact", url: "/contact", icon: Mail },
-  { title: "Settings", url: "/settings", icon: Settings },
+
 ];
 
 export function AppSidebar() {
