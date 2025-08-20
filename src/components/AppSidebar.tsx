@@ -16,7 +16,7 @@ import {
 const navigationItems = [
   { title: "Home", url: "/", icon: Home },
   { title: "About", url: "/about", icon: User },
-  { title: "Work", url: "/work", icon: Briefcase },
+  { title: "Projects", url: "/work", icon: Briefcase },
   { title: "Resume", url: "/resume", icon: FileText },
   { title: "Contact", url: "/contact", icon: Mail },
 
