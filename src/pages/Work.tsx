@@ -6,7 +6,7 @@ import { ExternalLink, Github, Play } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "AI-Powered Video Editor",
+    title: "Unibites-A all in one for food needs ",
     description: "Advanced video editing platform with machine learning capabilities for automatic scene detection and smart editing suggestions.",
     image: "/api/placeholder/400/250",
     technologies: ["React", "TypeScript", "Python", "TensorFlow", "FFmpeg"],
