@@ -83,6 +83,124 @@ const projects = [
       live: "#",
       github: "#"
     }
+  },
+  {
+    id: 7,
+    title: "Social Media Scheduler",
+    description: "Cross-platform social media management tool with AI-powered content suggestions and optimal posting time predictions.",
+    image: "/api/placeholder/400/250",
+    technologies: ["React Native", "Node.js", "MongoDB", "Twitter API", "Instagram API"],
+    category: "Mobile Development",
+    status: "Live",
+    links: {
+      live: "#",
+      github: "#",
+      demo: "#"
+    }
+  },
+  {
+    id: 8,
+    title: "E-commerce Analytics Engine",
+    description: "Real-time analytics platform for e-commerce businesses with predictive sales forecasting and customer behavior analysis.",
+    image: "/api/placeholder/400/250",
+    technologies: ["Python", "Pandas", "Scikit-learn", "FastAPI", "PostgreSQL"],
+    category: "Data Analytics",
+    status: "Live",
+    links: {
+      live: "#",
+      github: "#"
+    }
+  },
+  {
+    id: 9,
+    title: "Blockchain Voting System",
+    description: "Secure and transparent voting platform built on blockchain technology with smart contracts for election integrity.",
+    image: "/api/placeholder/400/250",
+    technologies: ["Solidity", "Web3.js", "React", "Ethereum", "IPFS"],
+    category: "Blockchain",
+    status: "Prototype",
+    links: {
+      github: "#",
+      demo: "#"
+    }
+  },
+  {
+    id: 10,
+    title: "Cloud Infrastructure Monitor",
+    description: "Multi-cloud monitoring solution with automated scaling, cost optimization, and performance analytics for enterprise applications.",
+    image: "/api/placeholder/400/250",
+    technologies: ["Go", "Kubernetes", "Grafana", "Prometheus", "Terraform"],
+    category: "DevOps",
+    status: "Live",
+    links: {
+      live: "#",
+      github: "#"
+    }
+  },
+  {
+    id: 11,
+    title: "AR Product Visualizer",
+    description: "Augmented reality application for furniture and home decor visualization using ARKit and advanced 3D rendering.",
+    image: "/api/placeholder/400/250",
+    technologies: ["Swift", "ARKit", "Unity", "3D Modeling", "Core ML"],
+    category: "AR/VR",
+    status: "In Development",
+    links: {
+      github: "#",
+      demo: "#"
+    }
+  },
+  {
+    id: 12,
+    title: "Cryptocurrency Trading Bot",
+    description: "Automated trading bot with machine learning algorithms for market prediction and risk management across multiple exchanges.",
+    image: "/api/placeholder/400/250",
+    technologies: ["Python", "TensorFlow", "Binance API", "Redis", "Docker"],
+    category: "Fintech",
+    status: "Live",
+    links: {
+      github: "#",
+      demo: "#"
+    }
+  },
+  {
+    id: 13,
+    title: "Smart Home Dashboard",
+    description: "Centralized control system for IoT devices with voice commands, automation rules, and energy consumption tracking.",
+    image: "/api/placeholder/400/250",
+    technologies: ["Flutter", "Firebase", "Arduino", "Alexa Skills", "MQTT"],
+    category: "IoT & Hardware",
+    status: "Live",
+    links: {
+      live: "#",
+      github: "#"
+    }
+  },
+  {
+    id: 14,
+    title: "Video Streaming Platform",
+    description: "Netflix-like streaming service with adaptive bitrate streaming, content recommendation engine, and subscription management.",
+    image: "/api/placeholder/400/250",
+    technologies: ["Next.js", "AWS Lambda", "HLS", "Stripe", "Elasticsearch"],
+    category: "Web Development",
+    status: "Live",
+    links: {
+      live: "#",
+      github: "#"
+    }
+  },
+  {
+    id: 15,
+    title: "AI Chatbot Framework",
+    description: "Natural language processing framework for building intelligent chatbots with context awareness and multi-language support.",
+    image: "/api/placeholder/400/250",
+    technologies: ["Python", "NLTK", "GPT-3", "FastAPI", "MongoDB"],
+    category: "Machine Learning",
+    status: "Open Source",
+    links: {
+      github: "#",
+      demo: "#"
+    }
   }
 ];
 
@@ -95,6 +213,8 @@ const Work = () => {
         return "bg-yellow-500/10 text-yellow-500 border-yellow-500/20";
       case "Prototype":
         return "bg-blue-500/10 text-blue-500 border-blue-500/20";
+      case "Open Source":
+        return "bg-purple-500/10 text-purple-500 border-purple-500/20";
       default:
         return "bg-gray-500/10 text-gray-500 border-gray-500/20";
     }
@@ -107,7 +227,13 @@ const Work = () => {
       "Data Analytics": "bg-green-500/10 text-green-400",
       "Collaboration": "bg-orange-500/10 text-orange-400",
       "IoT & Hardware": "bg-red-500/10 text-red-400",
-      "Backend Development": "bg-cyan-500/10 text-cyan-400"
+      "Backend Development": "bg-cyan-500/10 text-cyan-400",
+      "Mobile Development": "bg-pink-500/10 text-pink-400",
+      "Blockchain": "bg-yellow-500/10 text-yellow-400",
+      "DevOps": "bg-indigo-500/10 text-indigo-400",
+      "AR/VR": "bg-violet-500/10 text-violet-400",
+      "Fintech": "bg-emerald-500/10 text-emerald-400",
+      "Open Source": "bg-teal-500/10 text-teal-400"
     };
     return colors[category as keyof typeof colors] || "bg-gray-500/10 text-gray-400";
   };
