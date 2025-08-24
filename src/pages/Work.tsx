@@ -7,7 +7,7 @@ const projects = [
   {
     id: 1,
     title: "Unibites-A all in one for food needs ",
-    description: "Advanced video editing platform with machine learning capabilities for automatic scene detection and smart editing suggestions.",
+    description: "A all in one platform for food ordering and",
     image: "/api/placeholder/400/250",
     technologies: ["React", "TypeScript", "Python", "TensorFlow", "FFmpeg"],
     category: "Machine Learning",
