@@ -49,10 +49,8 @@ export function Navbar() {
             </NavLink>
           </div>
 
-          {/* Navigation Links - Hidden on scroll */}
-          <div className={`hidden md:flex items-center space-x-8 transition-all duration-500 ease-in-out ${
-            isScrolled ? "opacity-0 pointer-events-none scale-95" : "opacity-100 scale-100"
-          }`}>
+          {/* Navigation Links - Always visible */}
+          <div className="hidden md:flex items-center space-x-8 transition-all duration-500 ease-in-out">
             {navigationItems.map((item) => (
               <NavLink
                 key={item.title}
