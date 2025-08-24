@@ -10,17 +10,6 @@ const navigationItems = [
   { title: "Ask Me", url: "/ask" },
 ];
 
-const techStack = [
-  { name: "Vercel", icon: "⚡", color: "text-blue-400" },
-  { name: "Cloudflare", icon: "☁️", color: "text-orange-400" },
-  { name: "Figma", icon: "🎨", color: "text-purple-400" },
-  { name: "AWS", icon: "☁️", color: "text-yellow-400" },
-  { name: "Github", icon: "📦", color: "text-gray-400" },
-  { name: "JavaScript", icon: "JS", color: "text-yellow-300" },
-  { name: "TypeScript", icon: "TS", color: "text-blue-300" },
-  { name: "Next.js", icon: "▲", color: "text-white" },
-];
-
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -93,25 +82,6 @@ export function Navbar() {
           </div>
         </div>
 
-        {/* Tech Stack - Only visible when scrolled */}
-        <div className={`transition-all duration-500 ease-in-out ${
-          isScrolled 
-            ? "opacity-100 max-h-16 mt-3" 
-            : "opacity-0 max-h-0 overflow-hidden"
-        }`}>
-          <div className="flex items-center justify-center space-x-6">
-            {techStack.map((tech) => (
-              <div
-                key={tech.name}
-                className={`flex items-center space-x-1 text-xs ${tech.color} hover:scale-110 transition-transform cursor-pointer`}
-                title={tech.name}
-              >
-                <span className="text-sm">{tech.icon}</span>
-                <span className="hidden lg:inline">{tech.name}</span>
-              </div>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Mobile Menu - Simple version */}
