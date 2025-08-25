@@ -1,4 +1,4 @@
-import profileImage from '@/assets/akshit-profile.jpg';
+import profileImage from '@/assets/akshit-profile.png';
 
 interface ProfileSectionProps {
   name: string;
@@ -6,15 +6,15 @@ interface ProfileSectionProps {
 
 const ProfileSection = ({ name }: ProfileSectionProps) => {
   return (
-    <div className="animate-slide-in-left">
+    <div className="animate-slide-in-left transform translate-x-8">
       <div className="profile-container">
         <div className="profile-border-outer" aria-hidden="true" />
         <div className="profile-border-inner" aria-hidden="true" />
-        <img 
+        <img
           src={profileImage}
           alt={`${name} - Creative Developer and Filmmaker`}
           className="profile-image"
-          style={{ transform: 'scale(1.0)' }} // Change this value: 0.8 = smaller, 1.2 = larger
+          style={{ transform: 'scale(1.2) translateX(0px)' }} // translateX: positive = right, negative = left
         />
       </div>
     </div>
