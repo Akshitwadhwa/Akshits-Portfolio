@@ -25,11 +25,11 @@ export function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
       isScrolled 
-        ? "bg-background/95 backdrop-blur-md border-b border-border/50" 
+        ? "bg-background/95 backdrop-blur-md border border-border/50 rounded-full mx-6 mt-4" 
         : "bg-transparent"
     }`}>
-      <div className={`container mx-auto px-6 transition-all duration-500 ease-in-out ${
-        isScrolled ? "py-2" : "py-6"
+      <div className={`transition-all duration-500 ease-in-out ${
+        isScrolled ? "px-6 py-2 max-w-4xl mx-auto" : "container mx-auto px-6 py-6"
       }`}>
         {/* Main Navigation */}
         <div className={`flex items-center transition-all duration-500 ease-in-out ${
