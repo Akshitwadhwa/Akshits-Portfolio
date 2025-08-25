@@ -14,7 +14,7 @@ const ProfileSection = ({ name }: ProfileSectionProps) => {
           src={profileImage}
           alt={`${name} - Creative Developer and Filmmaker`}
           className="profile-image"
-          style={{ transform: 'scale(1.2) translateX(0px)' }} // translateX: positive = right, negative = left
+          style={{ transform: 'scale(1.8) translateX(0px) translateY(-60px)' }} // Scale up and move up to focus on face and upper body
         />
       </div>
     </div>
