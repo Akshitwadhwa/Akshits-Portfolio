@@ -25,25 +25,21 @@ export function Navbar() {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${
       isScrolled 
-        ? "bg-background/95 backdrop-blur-md border border-border/50 rounded-full mx-6 mt-4" 
+        ? "bg-background/95 backdrop-blur-md border border-border/50 rounded-full mx-8 mt-6" 
         : "bg-transparent"
     }`}>
       <div className={`transition-all duration-500 ease-in-out ${
-        isScrolled ? "px-6 py-2 max-w-4xl mx-auto" : "container mx-auto px-6 py-6"
+        isScrolled ? "px-8 py-3 max-w-6xl mx-auto" : "container mx-auto px-6 py-6"
       }`}>
         {/* Main Navigation */}
-        <div className={`flex items-center transition-all duration-500 ease-in-out ${
-          isScrolled 
-            ? "justify-between" 
-            : "justify-between"
-        }`}>
+        <div className="flex items-center justify-between transition-all duration-500 ease-in-out">
           {/* Logo/Name */}
           <div className={`transition-all duration-500 ease-in-out ${
-            isScrolled ? "text-xl" : "text-2xl"
+            isScrolled ? "text-lg font-semibold" : "text-2xl font-bold"
           }`}>
             <NavLink 
               to="/" 
-              className="font-bold text-primary hover:text-primary/80 transition-colors"
+              className="text-primary hover:text-primary/80 transition-colors"
             >
               Akhit Wadhwa
             </NavLink>
@@ -67,9 +63,7 @@ export function Navbar() {
           </div>
 
           {/* Contact Button */}
-          <div className={`transition-all duration-500 ease-in-out ${
-            isScrolled ? "scale-90" : "scale-100"
-          }`}>
+          <div className="transition-all duration-500 ease-in-out">
             <Button 
               variant="outline" 
               size={isScrolled ? "sm" : "default"}
