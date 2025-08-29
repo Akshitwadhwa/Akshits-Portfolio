@@ -269,19 +269,25 @@ const Work = () => {
               {/* Project Links Overlay */}
               <div className="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {project.links.live && (
-                  <Button size="sm" variant="secondary" className="bg-background/90 hover:bg-background">
-                    <ExternalLink className="h-4 w-4" />
-                  </Button>
+                  <a href={project.links.live} target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" variant="secondary" className="bg-background/90 hover:bg-background">
+                      <ExternalLink className="h-4 w-4" />
+                    </Button>
+                  </a>
                 )}
                 {project.links.github && (
-                  <Button size="sm" variant="secondary" className="bg-background/90 hover:bg-background">
-                    <Github className="h-4 w-4" />
-                  </Button>
+                  <a href={project.links.github} target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" variant="secondary" className="bg-background/90 hover:bg-background">
+                      <Github className="h-4 w-4" />
+                    </Button>
+                  </a>
                 )}
                 {project.links.demo && (
-                  <Button size="sm" variant="secondary" className="bg-background/90 hover:bg-background">
-                    <Play className="h-4 w-4" />
-                  </Button>
+                  <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" variant="secondary" className="bg-background/90 hover:bg-background">
+                      <Play className="h-4 w-4" />
+                    </Button>
+                  </a>
                 )}
               </div>
             </div>
