@@ -7,15 +7,15 @@ const projects = [
   {
     id: 1,
     title: "Unibites-A all in one for food needs ",
-    description: "A all in one platform for food ordering and",
+    description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
     image: "/api/placeholder/400/250",
-    technologies: ["React", "TypeScript", "Python", "TensorFlow", "FFmpeg"],
-    category: "Machine Learning",
+    technologies: ["Kotlin", "Java", "Android", "TensorFlow"],
+    category: "Android Development",
     status: "Live",
     links: {
       live: "#",
-      github: "#",
-      demo: "#"
+      github: "https://github.com/Akshitwadhwa/Unibites--A-all-in-one-for-food-needs",
+      
     }
   },
   {
