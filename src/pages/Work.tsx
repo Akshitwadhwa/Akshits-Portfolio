@@ -1,21 +1,23 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Github, Play } from "lucide-react";
+import { ExternalLink, GithubIcon, Play, Image as ImageIcon } from "lucide-react";
+import { useEffect, useState } from "react";
+import { getProjectImages } from "@/firebase/storage";
 
 const projects = [
   {
     id: 1,
     title: "Unibites-A all in one for food needs ",
     description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
-    image: "/api/placeholder/400/250",
+    image: "My Projects/unibytes.png",
     technologies: ["Kotlin", "Java", "Android", "TensorFlow"],
     category: "Android Development",
     status: "Live",
     links: {
       live: "#",
       github: "https://github.com/Akshitwadhwa/Unibites--A-all-in-one-for-food-needs",
-      
+
     }
   },
   {
@@ -205,6 +207,34 @@ const projects = [
 ];
 
 const Work = () => {
+  const [projectImages, setProjectImages] = useState<{ [key: string]: string }>({});
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const loadImages = async () => {
+      try {
+        // Get all project image paths
+        const imagePaths = projects.map(project => project.image);
+        // Fetch all images from Firebase
+        const images = await getProjectImages(imagePaths);
+
+        // Create a map of image paths to URLs
+        const imageMap = images.reduce((acc: { [key: string]: string }, img) => {
+          acc[img.path] = img.url;
+          return acc;
+        }, {});
+
+        setProjectImages(imageMap);
+      } catch (error) {
+        console.error('Error loading project images:', error);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+
+    loadImages();
+  }, []);
+
   const getStatusColor = (status: string) => {
     switch (status) {
       case "Live":
@@ -253,19 +283,31 @@ const Work = () => {
       {/* Projects Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
         {projects.map((project) => (
-          <Card 
-            key={project.id} 
+          <Card
+            key={project.id}
             className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm"
           >
             {/* Project Image */}
-            <div className="relative overflow-hidden rounded-t-lg">
-              <img 
-                src={project.image} 
-                alt={project.title}
-                className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-              
+            <div className="relative overflow-hidden rounded-t-lg h-48">
+              {isLoading ? (
+                <div className="w-full h-full flex items-center justify-center bg-muted">
+                  <ImageIcon className="w-8 h-8 animate-pulse text-muted-foreground" />
+                </div>
+              ) : projectImages[project.image] ? (
+                <div className="relative w-full h-full">
+                  <img
+                    src={projectImages[project.image]}
+                    alt={project.title}
+                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                </div>
+              ) : (
+                <div className="w-full h-full flex items-center justify-center bg-muted">
+                  <ImageIcon className="w-8 h-8 text-muted-foreground" />
+                </div>
+              )}
+
               {/* Project Links Overlay */}
               <div className="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 {project.links.live && (
@@ -278,7 +320,7 @@ const Work = () => {
                 {project.links.github && (
                   <a href={project.links.github} target="_blank" rel="noopener noreferrer">
                     <Button size="sm" variant="secondary" className="bg-background/90 hover:bg-background">
-                      <Github className="h-4 w-4" />
+                      <GithubIcon className="h-4 w-4" />
                     </Button>
                   </a>
                 )}
@@ -301,11 +343,11 @@ const Work = () => {
                   {project.status}
                 </Badge>
               </div>
-              
+
               <CardTitle className="text-xl group-hover:text-primary transition-colors">
                 {project.title}
               </CardTitle>
-              
+
               <CardDescription className="text-sm leading-relaxed">
                 {project.description}
               </CardDescription>
@@ -315,9 +357,9 @@ const Work = () => {
               {/* Technologies */}
               <div className="flex flex-wrap gap-1.5">
                 {project.technologies.map((tech) => (
-                  <Badge 
-                    key={tech} 
-                    variant="secondary" 
+                  <Badge
+                    key={tech}
+                    variant="secondary"
                     className="text-xs bg-muted/50 hover:bg-muted transition-colors"
                   >
                     {tech}
