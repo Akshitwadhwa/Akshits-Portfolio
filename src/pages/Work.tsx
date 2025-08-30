@@ -11,7 +11,7 @@ const projects = [
     id: 1,
     title: "Unibites-A all in one for food needs ",
     description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
-    image: "/api/placeholder/400/250",
+    image: "My Projects/unibytes.png",
     technologies: ["Kotlin", "Java", "Android", "TensorFlow"],
     category: "Android Development",
     status: "Live",
@@ -214,11 +214,17 @@ const Work = () => {
   useEffect(() => {
     const loadImages = async () => {
       try {
-        const images = await getProjectImages();
+        // Get all project image paths
+        const imagePaths = projects.map(project => project.image);
+        // Fetch all images from Firebase
+        const images = await getProjectImages(imagePaths);
+        
+        // Create a map of image paths to URLs
         const imageMap = images.reduce((acc: { [key: string]: string }, img) => {
-          acc[img.name] = img.url;
+          acc[img.path] = img.url;
           return acc;
         }, {});
+        
         setProjectImages(imageMap);
       } catch (error) {
         console.error('Error loading project images:', error);
@@ -288,10 +294,10 @@ const Work = () => {
                 <div className="w-full h-full flex items-center justify-center bg-muted">
                   <ImageIcon className="w-8 h-8 animate-pulse text-muted-foreground" />
                 </div>
-              ) : projectImages[`${project.id}.jpg`] ? (
+              ) : projectImages[project.image] ? (
                 <div className="relative w-full h-full">
                   <img 
-                    src={projectImages[`${project.id}.jpg`]}
+                    src={projectImages[project.image]}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
                   />
