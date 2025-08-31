@@ -134,4 +134,107 @@
     border-radius: 50%;
     animation: float 20s infinite linear;
   }
+
+  /* 3D Transform Utilities */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-gpu {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+
+  .rotate-y-6 {
+    transform: rotateY(6deg);
+  }
+
+  .rotate-x-2 {
+    transform: rotateX(2deg);
+  }
+
+  .rotate-y-12 {
+    transform: rotateY(12deg);
+  }
+
+  .translate-z-1 {
+    transform: translateZ(4px);
+  }
+
+  .translate-z-2 {
+    transform: translateZ(8px);
+  }
+
+  .translate-z-3 {
+    transform: translateZ(12px);
+  }
+
+  .translate-z-4 {
+    transform: translateZ(16px);
+  }
+
+  /* 3D Card Hover Effects */
+  .card-3d {
+    transform-style: preserve-3d;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .card-3d:hover {
+    transform: rotateY(6deg) rotateX(2deg) translateY(-16px) scale(1.05);
+  }
+
+  /* 3D Image Effects */
+  .image-3d {
+    transform-style: preserve-3d;
+    transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .image-3d:hover {
+    transform: rotateY(12deg) scale(1.25) rotate(2deg);
+  }
+
+  /* 3D Button Effects */
+  .button-3d {
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .button-3d:hover {
+    transform: scale(1.1) rotateY(12deg) translateZ(8px);
+  }
+
+  /* 3D Badge Effects */
+  .badge-3d {
+    transform-style: preserve-3d;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+
+  .badge-3d:hover {
+    transform: scale(1.1) rotateY(6deg) translateZ(4px);
+  }
+
+  /* Floating Animation */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(180deg);
+    }
+  }
+
+  /* 3D Glow Effect */
+  .glow-3d {
+    box-shadow: 
+      0 0 20px rgba(255, 255, 255, 0.1),
+      0 0 40px rgba(255, 255, 255, 0.05),
+      0 0 60px rgba(255, 255, 255, 0.025);
+  }
+
+  .glow-3d:hover {
+    box-shadow: 
+      0 0 30px rgba(255, 255, 255, 0.2),
+      0 0 60px rgba(255, 255, 255, 0.1),
+      0 0 90px rgba(255, 255, 255, 0.05);
+  }
 }
