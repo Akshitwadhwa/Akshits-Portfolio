@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     title: "Unibites-A all in one for food needs ",
     description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
-    image: "My Projects/unibytes.png",
+    image: "My Projects/unibytes2.png",
     technologies: ["Kotlin", "Java", "Android", "TensorFlow"],
     category: "Android Development",
     status: "Live",

@@ -1,6 +1,7 @@
 import profileImage from "@/assets/akshit-profile.png";
 import { Atom, Brain, SquareFunction } from "lucide-react";
 import { PORTFOLIO_CONFIG } from "@/constants/portfolio";
+import Skills from "@/components/Skills";
 
 const About = () => {
   const { name } = PORTFOLIO_CONFIG;
@@ -40,27 +41,10 @@ const About = () => {
           </p>
         </section>
 
-        {/* Key Technologies Section */}
+        {/* Skills Section */}
         <section>
-          <h2 className="text-2xl font-bold text-foreground mb-6">Key Technologies</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            <div className="flex items-center gap-4 p-4 rounded-lg border border-border bg-card hover:bg-accent/50 transition-colors">
-              <Atom className="h-6 w-6 text-portfolio-blue" />
-              <span className="text-foreground font-medium">React</span>
-            </div>
-            <div className="flex items-center gap-4 p-4 rounded-lg border border-border bg-card hover:bg-accent/50 transition-colors">
-              <SquareFunction className="h-6 w-6 text-portfolio-green" />
-              <span className="text-foreground font-medium">Machine Learning</span>
-            </div>
-             <div className="flex items-center gap-4 p-4 rounded-lg border border-border bg-card hover:bg-accent/50 transition-colors">
-              <SquareFunction className="h-6 w-6 text-portfolio-green" />
-              <span className="text-foreground font-medium">Full Stack Development</span>
-            </div>
-            <div className="flex items-center gap-4 p-4 rounded-lg border border-border bg-card hover:bg-accent/50 transition-colors">
-              <Brain className="h-6 w-6 text-portfolio-red" />
-              <span className="text-foreground font-medium">Artificial Intelligence</span>
-            </div>
-          </div>
+          <h2 className="text-2xl font-bold text-foreground mb-6">Skills & Technologies</h2>
+          <Skills />
         </section>
       </div>
     </div>
