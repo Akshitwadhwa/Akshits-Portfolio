@@ -43,7 +43,7 @@ const projects = [
     status: "Live",
     links: {
       live: "",
-      github: "",
+      github: "https://github.com/Akshitwadhwa/A_Million_Miles-We-take-your-story-further",
     }
   },
   {
