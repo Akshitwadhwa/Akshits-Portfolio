@@ -25,9 +25,9 @@ const projects = [
     title: "Event Management Platform",
     description: "Comprehensive platform for managing events, including ticketing, scheduling, and attendee engagement.",
     image: "My Projects/Make All Stops.png",
-    technologies: ["Next.js", "Prisma", "PostgreSQL", "AWS S3", "Stripe"],
+    technologies: ["HTML", "CSS", "Javascript", "MongoDB ", "Express.JS"],
     category: "Web Development",
-    status: "In Development",
+    status: "Live",
     links: {
       live: "https://project-for-web-dev.vercel.app",
       github: "https://github.com/Akshitwadhwa/project-for-web-dev"
@@ -35,10 +35,10 @@ const projects = [
   },
   {
     id: 3,
-    title: "Music Video Analytics",
-    description: "Comprehensive analytics dashboard for music video performance tracking across multiple platforms with AI-driven insights.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Vue.js", "D3.js", "Node.js", "MongoDB", "YouTube API"],
+    title: "Make all stops-- Content Dashboard",
+    description: "A modern , responsive web platform designed to help creators and businesses master short-form content.",
+    image: "My Projects/A million miles.png",
+    technologies: ["HTML", "CSS", "Node.js", "Javascript", "Firebase"],
     category: "Data Analytics",
     status: "Live",
     links: {
@@ -49,7 +49,7 @@ const projects = [
   {
     id: 4,
     title: "Real-time Collaboration Tool",
-    description: "Collaborative workspace for creative teams with real-time editing, version control, and project management features.",
+    description: "A modern , responsive web platform designed to help creators and businesses master short-form content.",
     image: "/api/placeholder/400/250",
     technologies: ["React", "Socket.io", "Express", "Redis", "Docker"],
     category: "Collaboration",
