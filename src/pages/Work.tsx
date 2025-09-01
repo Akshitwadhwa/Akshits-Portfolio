@@ -48,8 +48,8 @@ const projects = [
   },
   {
     id: 4,
-    title: "Real-time Collaboration Tool",
-    description: "A modern , responsive web platform designed to help creators and businesses master short-form content.",
+    title: "AeroConnect",
+    description: "",
     image: "/api/placeholder/400/250",
     technologies: ["React", "Socket.io", "Express", "Redis", "Docker"],
     category: "Collaboration",
