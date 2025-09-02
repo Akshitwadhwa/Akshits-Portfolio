@@ -10,7 +10,7 @@ const projects = [
     id: 1,
     title: "Unibites-A all in one for food needs ",
     description: "UniBites is a modern, feature-rich Android food ordering application that brings your favorite meals right to your fingertips. Built with cutting-edge technology and designed for seamless user experience.",
-    image: "My Projects/unibytes.png",
+    image: "My Projects/unibytes2.png",
     technologies: ["Kotlin", "Java", "Android", "TensorFlow"],
     category: "Android Development",
     status: "Live",
@@ -22,35 +22,34 @@ const projects = [
   },
   {
     id: 2,
-    title: "Cinematic Portfolio Platform",
-    description: "Modern portfolio showcase for photographers and videographers with advanced gallery features and client collaboration tools.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Next.js", "Prisma", "PostgreSQL", "AWS S3", "Stripe"],
+    title: "Event Management Platform",
+    description: "Comprehensive platform for managing events, including ticketing, scheduling, and attendee engagement.",
+    image: "My Projects/Make All Stops.png",
+    technologies: ["HTML", "CSS", "Javascript", "MongoDB ", "Express.JS"],
     category: "Web Development",
-    status: "In Development",
+    status: "Live",
     links: {
-      live: "#",
-      github: "#"
+      live: "https://project-for-web-dev.vercel.app",
+      github: "https://github.com/Akshitwadhwa/project-for-web-dev"
     }
   },
   {
     id: 3,
-    title: "Music Video Analytics",
-    description: "Comprehensive analytics dashboard for music video performance tracking across multiple platforms with AI-driven insights.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Vue.js", "D3.js", "Node.js", "MongoDB", "YouTube API"],
+    title: "Make all stops-- Content Dashboard",
+    description: "A modern , responsive web platform designed to help creators and businesses master short-form content.",
+    image: "My Projects/A million miles.png",
+    technologies: ["HTML", "CSS", "Node.js", "Javascript", "Firebase"],
     category: "Data Analytics",
     status: "Live",
     links: {
-      live: "#",
-      github: "#",
-      demo: "#"
+      live: "",
+      github: "https://github.com/Akshitwadhwa/A_Million_Miles-We-take-your-story-further",
     }
   },
   {
     id: 4,
-    title: "Real-time Collaboration Tool",
-    description: "Collaborative workspace for creative teams with real-time editing, version control, and project management features.",
+    title: "AeroConnect",
+    description: "",
     image: "/api/placeholder/400/250",
     technologies: ["React", "Socket.io", "Express", "Redis", "Docker"],
     category: "Collaboration",
@@ -125,84 +124,6 @@ const projects = [
       github: "#",
       demo: "#"
     }
-  },
-  {
-    id: 10,
-    title: "Cloud Infrastructure Monitor",
-    description: "Multi-cloud monitoring solution with automated scaling, cost optimization, and performance analytics for enterprise applications.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Go", "Kubernetes", "Grafana", "Prometheus", "Terraform"],
-    category: "DevOps",
-    status: "Live",
-    links: {
-      live: "#",
-      github: "#"
-    }
-  },
-  {
-    id: 11,
-    title: "AR Product Visualizer",
-    description: "Augmented reality application for furniture and home decor visualization using ARKit and advanced 3D rendering.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Swift", "ARKit", "Unity", "3D Modeling", "Core ML"],
-    category: "AR/VR",
-    status: "In Development",
-    links: {
-      github: "#",
-      demo: "#"
-    }
-  },
-  {
-    id: 12,
-    title: "Cryptocurrency Trading Bot",
-    description: "Automated trading bot with machine learning algorithms for market prediction and risk management across multiple exchanges.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Python", "TensorFlow", "Binance API", "Redis", "Docker"],
-    category: "Fintech",
-    status: "Live",
-    links: {
-      github: "#",
-      demo: "#"
-    }
-  },
-  {
-    id: 13,
-    title: "Smart Home Dashboard",
-    description: "Centralized control system for IoT devices with voice commands, automation rules, and energy consumption tracking.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Flutter", "Firebase", "Arduino", "Alexa Skills", "MQTT"],
-    category: "IoT & Hardware",
-    status: "Live",
-    links: {
-      live: "#",
-      github: "#"
-    }
-  },
-  {
-    id: 14,
-    title: "Video Streaming Platform",
-    description: "Netflix-like streaming service with adaptive bitrate streaming, content recommendation engine, and subscription management.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Next.js", "AWS Lambda", "HLS", "Stripe", "Elasticsearch"],
-    category: "Web Development",
-    status: "Live",
-    links: {
-      live: "#",
-      github: "#"
-    }
-  },
-  {
-    id: 15,
-    title: "AI Chatbot Framework",
-    description: "Natural language processing framework for building intelligent chatbots with context awareness and multi-language support.",
-    image: "/api/placeholder/400/250",
-    technologies: ["Python", "NLTK", "GPT-3", "FastAPI", "MongoDB"],
-    category: "Machine Learning",
-    status: "Open Source",
-    links: {
-      github: "#",
-      demo: "#"
-    }
   }
 ];
 
@@ -271,24 +192,24 @@ const Work = () => {
   return (
     <div className="min-h-screen p-6 space-y-8">
       {/* Header Section */}
-      <div className="text-center space-y-4 mb-12">
-        <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary via-primary-foreground to-accent bg-clip-text text-transparent">
+      <div className="text-center space-y-4 mb-12 perspective-1000">
+        <h1 className="text-4xl md:text-6xl font-bold bg-gradient-to-r from-primary via-primary-foreground to-accent bg-clip-text text-transparent transform-gpu hover:scale-105 transition-transform duration-500">
           Featured Work
         </h1>
-        <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+        <p className="text-lg text-muted-foreground max-w-2xl mx-auto transform-gpu hover:translate-z-2 transition-transform duration-500">
           Explore my latest projects spanning machine learning, web development, and creative technology solutions.
         </p>
       </div>
 
       {/* Projects Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto perspective-1000">
         {projects.map((project) => (
           <Card
             key={project.id}
-            className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-300 hover:-translate-y-2 border-border/50 bg-card/50 backdrop-blur-sm"
+            className="group card-3d hover:shadow-2xl hover:shadow-primary/20 border-border/50 bg-card/50 backdrop-blur-sm cursor-pointer glow-3d"
           >
             {/* Project Image */}
-            <div className="relative overflow-hidden rounded-t-lg h-48">
+            <div className="relative overflow-hidden rounded-t-lg h-48 image-3d">
               {isLoading ? (
                 <div className="w-full h-full flex items-center justify-center bg-muted">
                   <ImageIcon className="w-8 h-8 animate-pulse text-muted-foreground" />
@@ -298,9 +219,9 @@ const Work = () => {
                   <img
                     src={projectImages[project.image]}
                     alt={project.title}
-                    className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-full object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
               ) : (
                 <div className="w-full h-full flex items-center justify-center bg-muted">
@@ -309,24 +230,36 @@ const Work = () => {
               )}
 
               {/* Project Links Overlay */}
-              <div className="absolute inset-0 flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 flex items-center justify-center gap-3 opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:scale-110">
                 {project.links.live && (
                   <a href={project.links.live} target="_blank" rel="noopener noreferrer">
-                    <Button size="sm" variant="secondary" className="bg-background/90 hover:bg-background">
+                    <Button 
+                      size="sm" 
+                      variant="secondary" 
+                      className="bg-background/90 hover:bg-background button-3d shadow-lg hover:shadow-xl"
+                    >
                       <ExternalLink className="h-4 w-4" />
                     </Button>
                   </a>
                 )}
                 {project.links.github && (
                   <a href={project.links.github} target="_blank" rel="noopener noreferrer">
-                    <Button size="sm" variant="secondary" className="bg-background/90 hover:bg-background">
+                    <Button 
+                      size="sm" 
+                      variant="secondary" 
+                      className="bg-background/90 hover:bg-background button-3d shadow-lg hover:shadow-xl"
+                    >
                       <GithubIcon className="h-4 w-4" />
                     </Button>
                   </a>
                 )}
                 {project.links.demo && (
                   <a href={project.links.demo} target="_blank" rel="noopener noreferrer">
-                    <Button size="sm" variant="secondary" className="bg-background/90 hover:bg-background">
+                    <Button 
+                      size="sm" 
+                      variant="secondary" 
+                      className="bg-background/90 hover:bg-background button-3d shadow-lg hover:shadow-xl"
+                    >
                       <Play className="h-4 w-4" />
                     </Button>
                   </a>
@@ -336,15 +269,15 @@ const Work = () => {
 
             <CardHeader className="space-y-3">
               <div className="flex items-center justify-between">
-                <Badge className={getCategoryColor(project.category)}>
+                <Badge className={`${getCategoryColor(project.category)} badge-3d`}>
                   {project.category}
                 </Badge>
-                <Badge variant="outline" className={getStatusColor(project.status)}>
+                <Badge variant="outline" className={`${getStatusColor(project.status)} badge-3d`}>
                   {project.status}
                 </Badge>
               </div>
 
-              <CardTitle className="text-xl group-hover:text-primary transition-colors">
+              <CardTitle className="text-xl group-hover:text-primary transition-all duration-300">
                 {project.title}
               </CardTitle>
 
@@ -356,11 +289,14 @@ const Work = () => {
             <CardContent className="pt-0">
               {/* Technologies */}
               <div className="flex flex-wrap gap-1.5">
-                {project.technologies.map((tech) => (
+                {project.technologies.map((tech, index) => (
                   <Badge
                     key={tech}
                     variant="secondary"
-                    className="text-xs bg-muted/50 hover:bg-muted transition-colors"
+                    className="text-xs bg-muted/50 hover:bg-muted badge-3d"
+                    style={{ 
+                      animationDelay: `${index * 50}ms`
+                    }}
                   >
                     {tech}
                   </Badge>
