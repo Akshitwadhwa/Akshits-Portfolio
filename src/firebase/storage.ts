@@ -1,5 +1,5 @@
 import { ref, uploadBytes, getDownloadURL, listAll } from 'firebase/storage';
-import { storage } from '@/firebase/config';
+import { storage } from './config';
 
 export interface ProjectImage {
   path: string;
