@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, GithubIcon, Play, Image as ImageIcon } from "lucide-react";
 import { useEffect, useState } from "react";
-import { getProjectImages } from "@/firebase";
+import { getProjectImages } from "@/firebase/storage";
 
 const projects = [
   {

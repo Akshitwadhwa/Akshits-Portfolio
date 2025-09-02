@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { uploadProjectImage } from '@/firebase';
+import { uploadProjectImage } from '@/firebase/storage';
 import { Upload } from 'lucide-react';
 
 interface ImageUploadProps {
