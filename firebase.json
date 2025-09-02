@@ -8,6 +8,10 @@
       "firebase-debug.log",
       "firebase-debug.*.log",
       "functions"
-    ]
+    ],
+    "repository": {
+      "type": "github",
+      "url": "https://github.com/Akshitwadhwa/Akshits-Portfolio"
+    }
   }
 }
