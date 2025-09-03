@@ -1,5 +1,18 @@
 {
   "projects": {
     "default": "portfolio-1b7e1"
-  }
+  },
+  "targets": {
+    "portfolio-1b7e1": {
+      "hosting": {
+        "portfolio": [
+          "portfolio-1b7e1"
+        ],
+        "akshit-wadhwa": [
+          "akshit-wadhwa"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
