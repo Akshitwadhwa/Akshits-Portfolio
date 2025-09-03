@@ -25,3 +25,8 @@ dist-ssr
 
 # Firebase config (contains sensitive keys)
 src/firebase/config.ts
+
+# Environment variables
+.env
+.env.local
+.env.production
