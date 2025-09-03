@@ -19,24 +19,5 @@ export default defineConfig(({ mode }) => ({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    rollupOptions: {
-      external: [
-        'firebase',
-        'firebase/app',
-        'firebase/storage',
-        'firebase/firestore',
-        'firebase/auth'
-      ],
-      output: {
-        globals: {
-          firebase: 'firebase',
-          'firebase/app': 'firebaseApp',
-          'firebase/storage': 'firebaseStorage',
-          'firebase/firestore': 'firebaseFirestore',
-          'firebase/auth': 'firebaseAuth'
-        }
-      }
-    }
-  }
+
 }));
