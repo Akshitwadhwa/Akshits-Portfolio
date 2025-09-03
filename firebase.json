@@ -14,8 +14,8 @@
       "url": "https://github.com/Akshitwadhwa/Akshits-Portfolio"
     }
   },
-      "hosting": {
-      "public": "dist",
+  "hosting": {
+    "public": "dist",
     "ignore": [
       "firebase.json",
       "**/.*",
