@@ -23,7 +23,7 @@ const About = () => {
           <div className="flex-1">
             <h1 className="text-5xl font-bold text-foreground mb-4">{name}</h1>
             <p className="text-muted-foreground text-xl leading-relaxed mb-4">
-              Software and AI developer specializing in Machine Learning, and Artificial Intelligence and Mern stack development through rect. Passionate
+              Software and AI developer specializing in Machine Learning, and Artificial Intelligence and Mern stack development through react. Passionate
               about creating innovative solutions and exploring new technologies.
             </p>
             <p className="text-muted-foreground text-lg">Based in Gurgaon</p>

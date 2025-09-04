@@ -18,6 +18,21 @@
     {
       "target": "portfolio",
       "public": "dist",
+      "headers": [
+        {
+          "source": "**",
+          "headers": [
+            {
+              "key": "Cache-Control",
+              "value": "max-age=3600"
+            }
+          ]
+        }
+      ],
+      "meta": {
+        "title": "Akshit Wadhwa - Full Stack Developer Portfolio",
+        "description": "Full Stack Developer specializing in React, Node.js, and Machine Learning. Building innovative web applications with modern technologies and clean code."
+      },
       "ignore": [
         "firebase.json",
         "**/.*",
