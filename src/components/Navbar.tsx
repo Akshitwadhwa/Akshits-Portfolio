@@ -7,7 +7,6 @@ const navigationItems = [
   { title: "Skills", url: "/skills" },
   { title: "Experience", url: "/experience" },
   { title: "Projects", url: "/work" },
-  { title: "Ask Me", url: "/ask" },
 ];
 
 export function Navbar() {
