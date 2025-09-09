@@ -50,7 +50,7 @@ const projects = [
     id: 4,
     title: "AeroConnect",
     description: "",
-    image: "My Projects/Aeroconnect.png",
+    image: "My Projects/Aerconnect.png",
     technologies: ["React", "Vite", "Firebase", "Redis", "Docker"],
     category: "Solo",
     status: "Development",
