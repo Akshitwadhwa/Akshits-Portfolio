@@ -42,21 +42,21 @@ const projects = [
     category: "Data Analytics",
     status: "Live",
     links: {
-      live: "",
-      github: "https://github.com/Akshitwadhwa/A_Million_Miles-We-take-your-story-further",
+      live: "#",
+      github: "https://github.com/Akshitwadhwa/A_Million_Miles-We-take-your-story-further"
     }
   },
   {
     id: 4,
     title: "AeroConnect",
     description: "",
-    image: "/api/placeholder/400/250",
-    technologies: ["React", "Socket.io", "Express", "Redis", "Docker"],
-    category: "Collaboration",
-    status: "Live",
+    image: "My Projects/Aeroconnect.png",
+    technologies: ["React", "Vite", "Firebase", "Redis", "Docker"],
+    category: "Solo",
+    status: "Development",
     links: {
       live: "#",
-      github: "#"
+      github: "https://github.com/Akshitwadhwa/AeroConnect_Vibe"
     }
   },
   {
