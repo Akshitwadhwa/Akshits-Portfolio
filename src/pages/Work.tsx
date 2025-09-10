@@ -49,7 +49,7 @@ const projects = [
   {
     id: 4,
     title: "AeroConnect",
-    description: "",
+    description: "Live flight tracking with up-to-the-minute departure and arrival information",
     image: "My Projects/Aerconnect.png",
     technologies: ["React", "Vite", "Firebase", "Redis", "Docker"],
     category: "Solo",
