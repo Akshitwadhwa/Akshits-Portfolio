@@ -61,8 +61,8 @@ const projects = [
   },
   {
     id: 5,
-    title: "Automated Gimbal Control",
-    description: "IoT solution for automated gimbal operations using computer vision and motion tracking for professional cinematography.",
+    title: "Enercore Pvt Limited",
+    description: "Internship Website For Enercore Private Limited",
     image: "/api/placeholder/400/250",
     technologies: ["Python", "OpenCV", "Raspberry Pi", "Arduino", "WebRTC"],
     category: "IoT & Hardware",
