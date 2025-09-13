@@ -68,6 +68,7 @@ const projects = [
     category: "IoT & Hardware",
     status: "Prototype",
     links: {
+      live: "https://enercore-pvt-limited.vercel.app/Sparsh.html",
       github: "#",
       demo: "#"
     }
