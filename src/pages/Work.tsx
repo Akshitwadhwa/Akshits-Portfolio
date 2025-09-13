@@ -64,13 +64,13 @@ const projects = [
     title: "Enercore Pvt Limited",
     description: "Internship Website For Enercore Private Limited",
     image: "/api/placeholder/400/250",
-    technologies: ["Python", "OpenCV", "Raspberry Pi", "Arduino", "WebRTC"],
+    technologies: ["HTML", "CSS", "JAVASCRIPT", "Arduino", "WebRTC"],
     category: "IoT & Hardware",
     status: "Prototype",
     links: {
       live: "https://enercore-pvt-limited.vercel.app/Sparsh.html",
-      github: "#",
-      demo: "#"
+      github: "https://github.com/Akshitwadhwa/enercore-pvt-limited",
+      
     }
   },
   {
