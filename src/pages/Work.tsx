@@ -63,7 +63,7 @@ const projects = [
     id: 5,
     title: "Enercore Pvt Limited",
     description: "Internship Website For Enercore Private Limited",
-    image: "/api/placeholder/400/250",
+    image: "My Projects/Enercore.png",
     technologies: ["HTML", "CSS", "JAVASCRIPT", "Arduino", "WebRTC"],
     category: "IoT & Hardware",
     status: "Prototype",
