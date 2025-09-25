@@ -75,10 +75,10 @@ const projects = [
   },
   {
     id: 6,
-    title: "Content Management System",
-    description: "Headless CMS specifically designed for media professionals with advanced asset management and workflow automation.",
+    title: "Maitre -- Astronauts Pen Pal",
+    description: "A complete voice-to-voice AI psychological support system for astronauts on the International Space Station, featuring evidence-based interventions and operational assistance.",
     image: "/api/placeholder/400/250",
-    technologies: ["Strapi", "GraphQL", "React", "PostgreSQL", "CloudFlare"],
+    technologies: ["Ollama", "Gemini", "Python", "Pytorch", "CloudFlare"],
     category: "Backend Development",
     status: "Live",
     links: {
