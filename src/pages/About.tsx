@@ -34,7 +34,7 @@ const About = () => {
         <section className="mb-12">
           <h2 className="text-2xl font-bold text-foreground mb-6">About Me</h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            I am a dedicated software developer with a strong foundation in React, Machine Learning, and Artificial
+            I am a dedicated software developer with a strong foundation in Web3 , App Development, Machine Learning and Artificial
             Intelligence. My expertise lies in building scalable and efficient applications that solve complex
             problems. I am passionate about staying up-to-date with the latest industry trends and continuously
             improving my skills.
