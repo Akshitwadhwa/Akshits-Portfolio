@@ -83,7 +83,7 @@ const projects = [
     status: "Live",
     links: {
       live: "#",
-      github: "#"
+      github: "https://github.com/Akshitwadhwa/Maitri-Astros-Pen-Pal"
     }
   },
   {
