@@ -77,7 +77,7 @@ const projects = [
     id: 6,
     title: "Maitre -- Astronauts Pen Pal",
     description: "A complete voice-to-voice AI psychological support system for astronauts on the International Space Station, featuring evidence-based interventions and operational assistance.",
-    image: "/api/placeholder/400/250",
+    image: "My Projects/Maitri- Astro Pen Pal.png",
     technologies: ["Ollama", "Gemini", "Python", "Pytorch", "CloudFlare"],
     category: "Backend Development",
     status: "Live",
