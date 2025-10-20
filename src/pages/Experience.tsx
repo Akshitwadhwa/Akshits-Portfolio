@@ -1,19 +1,11 @@
-import timelineElements from "./assets/timelineElements";
-import schoolIcon from "../../assets/school.svg";
-import workIcon from "../../assets/work.svg";
+import timelineElements from "../assets/timelineElements.js";
+import schoolIcon from "../assets/school.svg";
+import workIcon from "../assets/work.svg";
 
-export default function Timeline({ defaultColor }) {
+export default function Timeline({ defaultColor = "bg-cyan-500" }: { defaultColor?: string }) {
   return (
-    <div>
+    <div className="flex flex-col justify-center items-center bg-gray-900 text-white text-base pb-8 sm:text-lg">
       {timelineElements.map((element) => {
-        const colors = [
-          "bg-red-500",
-          "bg-blue-500",
-          "bg-yellow-500",
-          "bg-purple-500",
-          "bg-orange-500",
-        ];
-
         const color = defaultColor || `bg-${element.color}-500`;
 
         return (
