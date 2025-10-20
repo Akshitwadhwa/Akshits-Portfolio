@@ -1,14 +1,14 @@
 const timelineElements = [
   {
     id: 1,
-    title: "Graduated from University",
-    location: "City1, State1",
-    description: "Completed my degree in Computer Science",
+    title: "Graduated from Schooling ",
+    location: "Gurgaon, Haryana",
+    description: "Completed my High school education",
     buttonText: "Details",
-    date: "2014-2018",
+    date: "2010-2023",
     icon: "school",
     color: "blue",
-    tech: ["JavaScript", "HTML", "CSS", "Java"],
+    tech: ["Mathematics", "Physics", "Chemistry", "English", "Computer Science"],
   },
   {
     id: 2,
