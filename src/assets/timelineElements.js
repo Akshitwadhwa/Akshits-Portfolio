@@ -13,7 +13,7 @@ const timelineElements = [
   {
     id: 2,
     title: "Computer science ",
-    location: "City2, State2",
+    location: "Gurgaon, Haryana",
     description: "Worked on web development projects",
     buttonText: "Details",
     date: "2018-2019",
