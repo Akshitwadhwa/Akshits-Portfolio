@@ -12,7 +12,7 @@ const timelineElements = [
   },
   {
     id: 2,
-    title: "Software Developer Internship",
+    title: "Computer science ",
     location: "City2, State2",
     description: "Worked on web development projects",
     buttonText: "Details",
