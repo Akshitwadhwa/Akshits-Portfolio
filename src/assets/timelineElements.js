@@ -12,7 +12,7 @@ const timelineElements = [
   },
   {
     id: 2,
-    title: "Software Development Intern",
+    title: "Enercore Software Intern",
     location: "Noida, Uttar Pradesh",
     description: "Working on connecting day to day operations Enercore Website",
     buttonText: "Details",
