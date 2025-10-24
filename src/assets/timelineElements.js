@@ -23,8 +23,8 @@ const timelineElements = [
   },
   {
     id: 3,
-    title: "Front-end Developer Job",
-    location: "City3, State3",
+    title: "Devops Internship at Porter",
+    location: "Gurgaon, Haryana",
     description: "Joined a tech company as a front-end developer",
     buttonText: "Details",
     date: "2019-2021",
