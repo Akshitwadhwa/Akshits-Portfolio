@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 import PortfolioButton from './PortfolioButton';
 import { ButtonVariant } from '@/types/portfolio';
 
@@ -8,6 +9,17 @@ interface ContentSectionProps {
 }
 
 const ContentSection = ({ name, description, buttons }: ContentSectionProps) => {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (button: ButtonVariant) => {
+    // Handle navigation for "View My Work" button
+    if (button.text === 'View My Work') {
+      navigate('/work');
+    } else if (button.action) {
+      button.action();
+    }
+  };
+
   return (
     <div className="text-center md:text-left max-w-lg animate-slide-in-right">
       <h1 className="hero-title animate-fade-in-delayed-1">
@@ -25,7 +37,7 @@ const ContentSection = ({ name, description, buttons }: ContentSectionProps) => 
             variant={button.variant}
             icon={button.icon}
             href={button.href}
-            action={button.action}
+            action={() => handleButtonClick(button)}
           >
             {button.text}
           </PortfolioButton>
