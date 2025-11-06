@@ -15,7 +15,12 @@ const ContentSection = ({ name, description, buttons }: ContentSectionProps) => 
     // Handle navigation for "View My Work" button
     if (button.text === 'View My Work') {
       navigate('/work');
-    } else if (button.action) {
+    } 
+    // Handle "Download Resume" button with external link
+    else if (button.text === 'Download Resume' && button.href) {
+      window.open(button.href, '_blank', 'noopener,noreferrer');
+    } 
+    else if (button.action) {
       button.action();
     }
   };
